@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-affiliate-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python bot.py"
+    envVars:
+      - key: RENDER_URL
+        value: https://telegram-affiliate-bot.onrender.com
